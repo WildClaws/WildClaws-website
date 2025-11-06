@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard - WildClaws</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WildClaws</div>
+            <div class="nav-links">
+                <a href="index.html">Book Appointment</a>
+                <a href="admin.html">Owner Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-section">
+            <div class="dashboard-header">
+                <h1>Owner Dashboard</h1>
+                <p>Manage your nail extension bookings</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3 id="totalBookings">0</h3>
+                    <p>Total Bookings</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="todayBookings">0</h3>
+                    <p>Today's Bookings</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="upcomingBookings">0</h3>
+                    <p>Upcoming Bookings</p>
+                </div>
+            </div>
+
+            <div class="bookings-container">
+                <h2>All Bookings</h2>
+                
+                <div class="filters">
+                    <input type="date" id="filterDate" placeholder="Filter by date">
+                    <select id="filterService">
+                        <option value="">All Services</option>
+                        <option value="acrylic">Acrylic Extensions</option>
+                        <option value="gel">Gel Extensions</option>
+                        <option value="fiberglass">Fiberglass Extensions</option>
+                        <option value="silk">Silk Wrap Extensions</option>
+                    </select>
+                    <input type="text" id="searchCustomer" placeholder="Search by customer name">
+                </div>
+
+                <div id="bookingsList" class="bookings-list">
+                    <!-- Bookings will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WildClaws. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
