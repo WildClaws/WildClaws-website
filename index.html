@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildClaws - Nail Extensions Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WildClaws</div>
+            <div class="nav-links">
+                <a href="index.html">Book Appointment</a>
+                <a href="admin.html">Owner Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Book Your Nail Extension Appointment</h1>
+            <p>Transform your nails with our professional nail extension services</p>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <h2>Schedule Your Appointment</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="customerName">Full Name *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="acrylic">Acrylic Extensions</option>
+                            <option value="gel">Gel Extensions</option>
+                            <option value="fiberglass">Fiberglass Extensions</option>
+                            <option value="silk">Silk Wrap Extensions</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time slot</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Any special requests or preferences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Book Appointment</button>
+                </form>
+
+                <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+                    <h3>✓ Booking Confirmed!</h3>
+                    <p>Your appointment has been successfully scheduled. We'll send you a confirmation email shortly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-info">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Acrylic Extensions</h3>
+                        <p>Durable and long-lasting nail extensions perfect for any occasion.</p>
+                        <p class="price">$50 - $80</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Gel Extensions</h3>
+                        <p>Natural-looking extensions with a glossy finish.</p>
+                        <p class="price">$60 - $90</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Fiberglass Extensions</h3>
+                        <p>Lightweight and flexible extensions for a natural feel.</p>
+                        <p class="price">$55 - $85</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Silk Wrap Extensions</h3>
+                        <p>Elegant and delicate extensions for special occasions.</p>
+                        <p class="price">$45 - $75</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WildClaws. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
